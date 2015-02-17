@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200);
+.jumbo{
+background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/nyc.jpg");
+background-size: cover;
+padding-top: 120px;
+}
+
+.nav{
+font-family: 'Raleway';
+font-size: 16px;
+line-height: 1.75em;
+font-weight: bold;
+color: white;
+padding-top:100px;
+}
+.nav li{
+display: inline;
+list-style-type: none;
+padding-right: 10px;
+}
+.jumbo-text h1{
+font-family: 'Raleway', sans-serif;
+font-size: 60px;
+font-weight:200;
+color: white;
+-webkit-font-smoothing: antialiased;
+text-align: center;
+}
+
+.how-we-do{
+margin-top:20px;
+margin-bottom:20px;
+}
+.how-we-do h1{
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+text-align: center;
+}
+.how-we-do i{
+color:rgba(51, 51, 51, 0.83);
+text-align:center;
+}
+.item-font{
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+font-size:28px;
+text-align:center;
+}
+.oneway {
+display: inline-block;
+text-align:center;
+margin-top:20px
+}
+.twoway {
+display: inline-block;
+text-align: center;
+margin-top:20px
+}
+.threeway {
+display: inline-block;
+text-align:center;
+margin-top:20px;
+}
+.concierge{
+background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/desk.jpg");
+background-size:cover;
+padding-bottom:100px;
+text-align:center;
+border-bottom:2px solid white;
+}
+.concierge h1{
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+font-size:80px;
+text-align:center;
+color:white;
+padding-top:300px;
+}
+.concierge h2{
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+font-size:50px;
+text-align:center;
+color:white;
+}
+.concierge .btn{
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+background-color:#333;
+color:white;
+text-align:center;
+font-weight:bold;
+font-size:x-large;
+margin-top:20px;
+}
+.launchpad-1{
+text-align:center;
+background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/la.jpg");
+padding-bottom:151;
+background-size:cover;
+-webkit-filter: grayscale(100%);
+border-right:1px solid white;
+text-align:center;
+}
+.launchpad-2{
+text-align:center;
+background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/sfgate.jpg");
+padding-bottom:151px;
+background-size:cover;
+-webkit-filter: grayscale(100%);
+border-right:1px solid white;
+}
+.launchpad-3{
+text-align:center;
+background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/nyc.jpg");
+padding-bottom:151px;
+background-size:cover;
+-webkit-filter: grayscale(100%);
+}
+
+.launchpad-1:hover{
+-webkit-filter: grayscale(0%);
+}
+.launchpad-2:hover{
+-webkit-filter: grayscale(0%);
+}
+.launchpad-3:hover{
+-webkit-filter: grayscale(0%);
+}
+
+.launchpad-1 h1{
+color:white;
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+padding-top:100px;
+}
+.launchpad-2 h1{
+color:white;
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+padding-top:100px;
+}
+.launchpad-3 h1{
+color:white;
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+padding-top:100px;
+}
+.launch-title{
+color:black;
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+text-align:center;
+margin-top:50px;
+margin-bottom:50px;
+font-size:50px
+}
+.launch{
+border-bottom:1px solid white;
+}
+.footer{
+background-color:#333;
+font-family: 'Raleway' 'sans-serif';
+-webkit-font-smoothing: antialiased;
+text-align:center;
+color:white;
+}
+.social{
+padding-top:50px;
+}
+.social a{
+display:inline-block;
+color:white;
+padding:10px;
+
+}
+.stamp img{
+text-align:center;
+border-radius:100;
+border:1px solid white;
+margin-top:10px;
+margin-bottom:10px;
+}
