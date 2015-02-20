@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="{{STATIC_URL}}application/css/main.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{STATIC_URL}}application/css/swipebox.min.css">
 </head>
 <body>
 <div class="container-fluid">
@@ -21,23 +22,69 @@
 		</div>
 	</div>
  </div>
-<div class="row">
+
+<div class="row what-we-do">
+ <div class="how-we-do col-md-12">
+ <h1>What We Do.</h1>
+ <div class="oneway col-md-4">
+ <i class="fa fa-tag fa-5x"></i>
+ <p class="item-font">Wardrobe Construction.</p>
+</div>
+ <div class="twoway col-md-4">
+ <i class="fa fa-calendar fa-5x"></i>
+ <p class="item-font">Refillables.</p>
+</div>
+ <div class="threeway col-md-4">
+ <i class="fa fa-car fa-5x"></i>
+ <p class="item-font">On-Demand Delivery.</p>
+	 </div>
+	</div>
+</div>
+
+
+<div class="row how-we-do-sec">
 <div class="how-we-do col-md-12">
 <h1>How We Do This </h1>
 <div class="oneway col-md-4">
-<i class="fa fa-suitcase fa-5x"></i>
-<p class="item-font">Curated Style Selection.</p>
+<i class="fa fa-desktop fa-5x"></i>
+<p class="item-font">Interactive Wardrobe Dashboard.</p>
 </div>
 <div class="twoway col-md-4">
-<i class="fa fa-phone fa-5x"></i>
-<p class="item-font">Direct Concierge.</p>
+<i class="fa fa-shirtsinbulk fa-5x"></i>
+<p class="item-font">In-house Tailoring.</p>
 </div>
 <div class="threeway col-md-4">
-<i class="fa fa-car fa-5x"></i>
-<p class="item-font">Hand Delivery Service.</p>
+<i class="fa fa-magic fa-5x"></i>
+<p class="item-font">Stylist Expertise.</p>
 </div>
   </div>
  </div>
+
+<div class="row front-slide">
+	<div class="col-md-12">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<a id="urban" href="#"><img src="{{STATIC_URL}}application/img/urban.jpg"></a>
+		</div>
+		<div class="item">
+			<a id="upscale" href="#"><img src="{{STATIC_URL}}application/img/casual.jpg" alt="..."></a>
+		</div>
+		<div class="item">
+			<a id="conservative" href="#"><img src="{{STATIC_URL}}application/img/conservative.jpg" alt="..."></a>
+		</div>
+	 </div>
+  </div>
+ </div>
+</div>
 <div class="concierge col-md-12">
 <h1>The Concierge</h1>
 <h2>Personalized service that never takes a break.<br> Go ahead. Make Every hour your happy hour. <br> Welcome to better.</h2>
@@ -59,6 +106,9 @@ Welcoming Gentlemen to Better.
 	<h1>NYC<br>Sept 2015</h1>
 	</div>
  </div>
+<div class="join-btn">
+<button type="button" data-toggle="modal" data-target="#join" class="btn" href="#">Join</button>
+</div>
 <div class="row footer">
 	<div class="social col-md-4">
 	<h1>Social Media</h1>
@@ -70,7 +120,7 @@ Welcoming Gentlemen to Better.
 <img width="200px" height="200px" src="{{STATIC_URL}}application/img/lapelwhite.png"/>
 </div>
 
-<div class=" nav-control col-md-4">	
+<div class=" nav-control col-md-4">
 <div class="nav">
 	 <ul>
 		<li>Jobs</li>
@@ -79,13 +129,210 @@ Welcoming Gentlemen to Better.
 		<li>|</li>
 		<li>FAQ</li>
 	</ul>
-</div>
-</div>
-
   </div>
  </div>
 </div>
+	<!-- Join Modal -->
+	<div class="modal fade" id="join" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Join Us.</h4>
+				</div>
+				<div class="modal-body">
+					<form action="/send/" method="post">
+						{% csrf_token %}
+					<div class="input-group">
+						<input type="text" name="name" class="form-control" placeholder="Full Name" aria-describedby="basic-addon2">
+						<input type="text" name="year"class="form-control" placeholder="Year Born" aria-describedby="basic-addon2">
+						<input type="text" name="residence"class="form-control" placeholder="City of Primary Residence" aria-describedby="basic-addon2">
+						<input type="text" name="method"class="form-control" placeholder="Perferred Method of Contact" aria-describedby="basic-addon2">
+						<input type="text" name="type"class="form-control" placeholder="Email or Phone" aria-describedby="basic-addon2">
+						<input type="text" name="icon"class="form-control" placeholder="Last question, one that we always ask, Who is your style icon?" aria-describedby="basic-addon2">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="{{STATIC_URL}}application/js/jquery.swipebox.min.js"></script>
+
+<script>
+$( '#urban' ).click( function( e ) {
+	e.preventDefault();
+	$.swipebox( [
+		{ href:'{{STATIC_URL}}application/img/urban/pic1.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic2.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic3.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic4.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic5.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic6.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic7.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic8.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic9.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic10.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic12.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic13.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic14.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic15.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic16.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic17.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic18.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic19.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic20.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic21.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic22.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic23.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic24.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic25.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic26.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic27.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic28.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic29.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic30.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic31.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic32.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic33.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic34.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic35.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic36.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic37.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic38.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic39.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic40.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic41.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic42.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic43.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic44.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic45.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic46.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic47.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic48.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic49.jpg'},
+		{ href:'{{STATIC_URL}}application/img/urban/pic50.jpg'},
+	] );
+} );
+</script>
+
+<script>
+$( '#upscale' ).click( function( e ) {
+	e.preventDefault();
+	$.swipebox( [
+		{ href:'{{STATIC_URL}}application/img/upscale/pic1.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic2.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic3.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic4.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic5.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic6.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic7.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic8.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic9.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic10.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic12.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic13.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic14.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic15.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic16.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic17.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic18.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic19.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic20.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic21.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic22.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic23.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic24.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic25.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic26.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic27.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic28.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic29.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic30.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic31.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic32.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic33.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic34.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic35.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic36.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic37.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic38.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic39.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic40.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic41.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic42.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic43.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic44.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic45.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic46.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic47.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic48.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic49.jpg'},
+		{ href:'{{STATIC_URL}}application/img/upscale/pic50.jpg'},
+	] );
+} );
+</script>
+
+<script>
+$( '#conservative' ).click( function( e ) {
+	e.preventDefault();
+	$.swipebox( [
+		{ href:'{{STATIC_URL}}application/img/conservative/pic1.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic2.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic3.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic4.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic5.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic6.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic7.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic8.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic9.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic10.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic12.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic13.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic14.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic15.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic16.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic17.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic18.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic19.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic20.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic21.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic22.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic23.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic24.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic25.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic26.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic27.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic28.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic29.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic30.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic31.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic32.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic33.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic34.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic35.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic36.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic37.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic38.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic39.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic40.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic41.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic42.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic43.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic44.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic45.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic46.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic47.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic48.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic49.jpg'},
+		{ href:'{{STATIC_URL}}application/img/conservative/pic50.jpg'},
+	] );
+} );
+</script>

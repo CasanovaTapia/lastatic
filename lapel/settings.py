@@ -82,3 +82,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Email Settings
+
+EMAIL_HOST = 'smtp.mandrillapp.com'
+
+EMAIL_PORT = '587'
+
+EMAIL_HOST_USER = 'chason@lapel.co'
