@@ -36,7 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'application'
+	'application',
+	'djrill'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -90,3 +91,7 @@ EMAIL_HOST = 'smtp.mandrillapp.com'
 EMAIL_PORT = '587'
 
 EMAIL_HOST_USER = 'chason@lapel.co'
+
+MANDRILL_API_KEY = "Rq5YwPyaFDhbaeCHuBI9eg"
+
+EMAIL_BACKEND = "djrill.mail.backends.djrill.DjrillBackend"

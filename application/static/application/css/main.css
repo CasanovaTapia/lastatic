@@ -1,4 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200);
+
+.logo-header{
+padding-bottom:160px;
+}
 .jumbo{
 background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/nyc.jpg");
 background-size: cover;
