@@ -5,119 +5,156 @@
 <link rel="stylesheet" href="{{STATIC_URL}}application/css/main.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="{{STATIC_URL}}application/css/swipebox.min.css">
+<link rel="stylesheet" href="{{STATIC_URL}}application/css/onepage-scroll.css">
+<link rel="stylesheet" href="{{STATIC_URL}}application/css/animate.css">
 </head>
 <body>
 <div class="container-fluid">
+
+<div class="main">
+
+<section>
 <div class="row">
-	<div class="col-md-12 logo-header">
+	<div class="col-md-12 logo-header animated bounce">
 		<center><img class="img-responsive" src="{{STATIC_URL}}application/img/lapel.png"/></center>
 		<center><img class="img-responsive" src="{{STATIC_URL}}application/img/downbtn.png"/></center>
 	</div>
 </div>
+</section>
 
-<div class="row jumbo">
-	<div class="col-md-12 jumbo-text">
-	<h1>Lapel is a search and <br> recommendation engine for men’s <br> designer clothing.</h1>
-    <h1>We use the expertise of professional<br> stylists curate requests and build<br> wardrobes.</h1>
+<section>
+<div class="row">
+	<div class="gentlemen-sec animated fadein">
+		<div class="col-md-12 gentlemen-title">
+		<h1>Our Gentlemen.</h1>
 		</div>
+	<div class="col-md-4 gentlemen">
+		<img src="{{STATIC_URL}}application/img/ga.png"/>
+		<h1>The Sartorialist</h1>
+		<h2>A man about town who knows <br> what to wear, and how to wear it. <br> We’re here to supplement your already polished understanding of style.</h2>
 	</div>
- </div>
+	<div class="col-md-4 gentlemen">
+		<img src="{{STATIC_URL}}application/img/gs.png"/>
+		<h1>The Journeyman</h1>
+		<h2>You’ve ridden with the fads.<br> You’ve seen it all. A bit of <br> disillusionment and a rougher <br> edge here or there is expected.<br> We’re here to bring you up to date</h2>
+	</div>
+	<div class="col-md-4 gentlemen">
+		<img src="{{STATIC_URL}}application/img/whip.png"/>
+		<h1>The Whippersnapper</h1>
+		<h2>Your tumblr-inspired fashion <br> fetish is only the beginning. <br> It’s likely that you wore <br> pleated pants to prom.<br> Stick with us, it can <br> be dangerous out there.</h2>
+	</div>
+</div>
+</div>
+</section>
 
-<div class="row what-we-do">
+<section>
+<div class="row ops">
  <div class="how-we-do col-md-12">
  <h1>What We Do.</h1>
+</div>
  <div class="oneway col-md-4">
- <i class="fa fa-tag fa-5x"></i>
+	<img src="{{STATIC_URL}}application/img/closet.png"/>
  <p class="item-font">Wardrobe Construction.</p>
+ <p class="item-desc">Built around you and your lifestyle, we'll build or polish your entire closet.</p>
 </div>
  <div class="twoway col-md-4">
- <i class="fa fa-calendar fa-5x"></i>
+	<img src="{{STATIC_URL}}application/img/calendar.png"/>
  <p class="item-font">Refillables.</p>
+<p class="item-desc">The morning routine is rough. We make it easier by delivering you all of your personal care items in one box, on your schedule.</p>
 </div>
  <div class="threeway col-md-4">
- <i class="fa fa-car fa-5x"></i>
+ <img src="{{STATIC_URL}}application/img/box.png"/>
  <p class="item-font">On-Demand Delivery.</p>
-	 </div>
-	</div>
+<p class="item-desc">Brick & mortar is archaic. Have everything you want, delivered wherever you are, whenever you need it.</p>
 </div>
+</div>
+</section>
 
-
-<div class="row how-we-do-sec">
-<div class="how-we-do col-md-12">
-<h1>How We Do This </h1>
-<div class="oneway col-md-4">
-<i class="fa fa-desktop fa-5x"></i>
-<p class="item-font">Interactive Wardrobe Dashboard.</p>
-</div>
-<div class="twoway col-md-4">
-<i class="fa fa-shirtsinbulk fa-5x"></i>
-<p class="item-font">In-house Tailoring.</p>
-</div>
-<div class="threeway col-md-4">
-<i class="fa fa-magic fa-5x"></i>
-<p class="item-font">Stylist Expertise.</p>
-</div>
-  </div>
- </div>
-
+<section class="block">
 <div class="row front-slide">
-	<div class="col-md-12">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="3"></li>
 	</ol>
 
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<a id="urban" href="#"><img src="{{STATIC_URL}}application/img/urban.jpg"></a>
+			<img src="{{STATIC_URL}}application/img/technology.png">
 		</div>
 		<div class="item">
-			<a id="upscale" href="#"><img src="{{STATIC_URL}}application/img/casual.jpg" alt="..."></a>
+			<img src="{{STATIC_URL}}application/img/expertise.png" alt="...">
 		</div>
 		<div class="item">
-			<a id="conservative" href="#"><img src="{{STATIC_URL}}application/img/conservative.jpg" alt="..."></a>
+			<img src="{{STATIC_URL}}application/img/tailoring.png" alt="...">
+		</div>
+		<div class="item">
+			<img src="{{STATIC_URL}}application/img/selection.png" alt="...">
 		</div>
 	 </div>
   </div>
- </div>
 </div>
+</section>
+
+<section>
+<div class="row lookbook">
+	<h2>Style Categories.</h2>
+	<h3>Our stylists sift through thousands of garments each week.<br> Here are their favorites.</h3>
+	<div class="col-md-4 lookbook-1">
+		<h1>Urban Chic</h1>
+		<button id="urban" class="btn">View Lookbook</button>
+	</div>
+	<div class="col-md-4 lookbook-2">
+		<h1>Upscale Casual</h1>
+		<button id="upscale" class="btn">View Lookbook</button>
+	</div>
+	<div class="col-md-4 lookbook-3">
+	 	<h1>Classic Conservative</h1>
+		<button id="conservative" class="btn">View Lookbook</button>
+	</div>
+</div>
+</section>
+
+<section>
+<div class="row">
 <div class="concierge col-md-12">
 <h1>The Concierge</h1>
-<h2>Personalized service that never takes a break.<br> Go ahead. Make Every hour your happy hour. <br> Welcome to better.</h2>
-<button class="btn">650.427.9226</button>
+<h2>We've got your everything.<br> Welcome to better.</h2>
 </div>
 </div>
+</section>
+
+<section>
 
 <div class="row launch">
-<div class="launch-title col-md-12">
-Welcoming Gentlemen to Better.
-</div>
  <div class="launchpad-1 col-md-4">
-	<h1>LA<br>April 2015</h1>
+	<h1>Los Angeles<br>April 2015</h1>
+	<button class="btn">Join</button>
   </div>
 <div class="launchpad-2 col-md-4">
-	<h1>SF<br>June 2015</h1>
+	<h1>San Francisco<br>June 2015</h1>
+	<button class="btn">Join</button>
 	</div>
 <div class="launchpad-3 col-md-4">
-	<h1>NYC<br>Sept 2015</h1>
+	<h1>New York City<br>Sept 2015</h1>
+	<button class="btn">Join</button>
 	</div>
  </div>
-<div class="join-btn">
-<button type="button" data-toggle="modal" data-target="#join" class="btn" href="#">Join</button>
-</div>
+
+
 <div class="row footer">
 	<div class="social col-md-4">
-	<h1>Social Media</h1>
 	<a href="https://angel.co/lapel"><i class="fa fa-angellist fa-2x"></i></a>
 	<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
 	<a href="http://instagram.com/lapelstyle/"><i class="fa fa-instagram fa-2x"></i></a>
+	<a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
 </div>
-<div class="stamp col-md-4">
-<img width="200px" height="200px" src="{{STATIC_URL}}application/img/lapelwhite.png"/>
+<div class=" col-md-4">
+<img width="150px" height="150px" src="{{STATIC_URL}}application/img/lapelwhite.png"/>
 </div>
 
 <div class=" nav-control col-md-4">
@@ -130,7 +167,6 @@ Welcoming Gentlemen to Better.
 		<li>FAQ</li>
 	</ul>
   </div>
- </div>
 </div>
 	<!-- Join Modal -->
 	<div class="modal fade" id="join" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -141,7 +177,7 @@ Welcoming Gentlemen to Better.
 					<h4 class="modal-title" id="myModalLabel">Join Us.</h4>
 				</div>
 				<div class="modal-body">
-					<form action="/send/" method="post">
+					<form action="send/" method="post">
 						{% csrf_token %}
 					<div class="input-group">
 						<input type="text" name="name" class="form-control" placeholder="Full Name" aria-describedby="basic-addon2">
@@ -160,11 +196,26 @@ Welcoming Gentlemen to Better.
 			</div>
 		</div>
 	</div>
+</div>
+
+</section>
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="{{STATIC_URL}}application/js/jquery.swipebox.min.js"></script>
+<script src="{{STATIC_URL}}application/js/jquery.onepage-scroll.min.js"></script>
+
+<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+
+	</script>
 
 <script>
 $( '#urban' ).click( function( e ) {
