@@ -332,6 +332,7 @@ font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
 text-align:center;
 color:white;
+padding-bottom:5px;
 }
 .social{
 padding-top:60px;
