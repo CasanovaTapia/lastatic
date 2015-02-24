@@ -133,15 +133,15 @@
 <div class="row launch">
  <div class="launchpad-1 col-md-4">
 	<h1>Los Angeles<br>April 2015</h1>
-	<button class="btn">Join</button>
+	<button type="button" class="btn" data-toggle="modal" data-target="#join">Join</button>
   </div>
 <div class="launchpad-2 col-md-4">
 	<h1>San Francisco<br>June 2015</h1>
-	<button class="btn">Join</button>
+	<button type="button" class="btn" data-toggle="modal" data-target="#join">Join</button>
 	</div>
 <div class="launchpad-3 col-md-4">
 	<h1>New York City<br>Sept 2015</h1>
-	<button class="btn">Join</button>
+	<button type="button"class="btn" data-toggle="modal" data-target="#join">Join</button>
 	</div>
  </div>
 
@@ -168,36 +168,38 @@
 	</ul>
   </div>
 </div>
-	<!-- Join Modal -->
-	<div class="modal fade" id="join" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Join Us.</h4>
-				</div>
-				<div class="modal-body">
-					<form action="send/" method="post">
-						{% csrf_token %}
-					<div class="input-group">
-						<input type="text" name="name" class="form-control" placeholder="Full Name" aria-describedby="basic-addon2">
-						<input type="text" name="year"class="form-control" placeholder="Year Born" aria-describedby="basic-addon2">
-						<input type="text" name="residence"class="form-control" placeholder="City of Primary Residence" aria-describedby="basic-addon2">
-						<input type="text" name="method"class="form-control" placeholder="Perferred Method of Contact" aria-describedby="basic-addon2">
-						<input type="text" name="type"class="form-control" placeholder="Email or Phone" aria-describedby="basic-addon2">
-						<input type="text" name="icon"class="form-control" placeholder="Last question, one that we always ask, Who is your style icon?" aria-describedby="basic-addon2">
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="submit" class="btn btn-primary">Send</button>
-				</div>
-			</form>
+</div>
+</section>
+</div>
+<section>
+<!-- Join Modal -->
+<div class="modal fade" id="join" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Join Us.</h4>
 			</div>
+			<div class="modal-body">
+				<form action="send/" method="post">
+					{% csrf_token %}
+				<div class="input-group">
+					<input type="text" name="name" class="form-control" placeholder="Full Name" aria-describedby="basic-addon2">
+					<input type="text" name="year"class="form-control" placeholder="Year Born" aria-describedby="basic-addon2">
+					<input type="text" name="residence"class="form-control" placeholder="City of Primary Residence" aria-describedby="basic-addon2">
+					<input type="text" name="method"class="form-control" placeholder="Perferred Method of Contact" aria-describedby="basic-addon2">
+					<input type="text" name="type"class="form-control" placeholder="Email or Phone" aria-describedby="basic-addon2">
+					<input type="text" name="icon"class="form-control" placeholder="Last question, one that we always ask, Who is your style icon?" aria-describedby="basic-addon2">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-primary">Send</button>
+			</div>
+		</form>
 		</div>
 	</div>
 </div>
-
 </section>
 </body>
 </html>
