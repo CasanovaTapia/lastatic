@@ -1,14 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200);
 @import url(http://fonts.googleapis.com/css?family=Voces);
 
-.supersize-me{
-  height:100%;
-}
 .logo-header{
 margin-top:80px;
 padding-bottom:160px;
 }
-
 .gentlemen-sec{
   text-align:center;
   height:100%;
@@ -215,13 +211,6 @@ text-align:center;
 color:white;
 padding-top:100px;
 }
-.concierge h3{
-  position:absolute;
-  bottom:0;
-  font-family: 'Voces', cursive;
-  color:white;
-  font-size:20px;
-}
 .concierge .btn{
 font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
@@ -403,5 +392,64 @@ background-color:green;
 }
 .vision img{
   height:200px;
-  width:2 00px;
+  width:200px;
+}
+
+@media (max-width: 767px) {
+    .onepage-wrapper {
+    }
+}
+
+@media (max-width: 767px) {
+    .gentlemen-sec {
+      height:auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .ops {
+      height:auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .lookbook{
+      height:auto;
+    }
+    .lookbook-1{
+      padding-bottom:20px;
+    }
+    .lookbook-2{
+      padding-bottom:20px;
+    }
+    .lookbook-3{
+      padding-bottom:20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .concierge {
+      height:auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+      height:auto;
+      width:auto;
+    }
+}
+
+@media (max-width: 767px){
+.carousel .item {
+    width: auto; /*slider width*/
+    max-height: auto; /*slider height*/
+  }
+}
+
+@media (max-width: 767px){
+.carousel .item img {
+    width: auto; /*img width*/
+    height: auto;
+  }
 }
