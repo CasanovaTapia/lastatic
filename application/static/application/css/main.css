@@ -398,6 +398,11 @@ background-color:green;
 @media (max-width: 767px) {
     .onepage-wrapper {
     }
+    .onepage-wrapper .section {
+      width: 100% !important;
+      height: auto !important;
+    }
+
 }
 
 @media (max-width: 767px) {
