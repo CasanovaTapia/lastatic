@@ -170,7 +170,7 @@ margin-top:20px;
   background-image: url("../img/upscale.jpg");
   background-size:cover;
   border-right:1px solid white;
-  padding-bottom:350px;
+  padding-bottom:30px;
   background-position:1px -106px;
 }
 .lookbook-2{
@@ -433,6 +433,11 @@ background-color:green;
     }
 }
 
+@media (max-width: 767px) {
+    .launchpad-2{
+      background-position:0px 0px;
+    }
+}
 @media (max-width: 767px) {
     .lookbook{
       height:auto;
