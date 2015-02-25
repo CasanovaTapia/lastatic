@@ -15,8 +15,8 @@ def index(request):
 def send(request):
 
 	template = "application/index.html"
-	
-	htmly = get_template('application/email.html')	
+
+	htmly = get_template('application/email.html')
 
 	name = request.POST.get("name", "")
 	year = request.POST.get("year", "")
@@ -32,7 +32,7 @@ def send(request):
 							'type':send_type,
 							'icon':icon })
 
-	subject, from_email, to = 'New Signup', 'auto@lapel.co', 'concierge@lapel.co'
+	subject, from_email, to = 'New Signup', 'auto@lapel.co', 'jeffrey@lapel.co'
 	html_content = htmly.render(c)
 	msg = EmailMultiAlternatives(subject, html_content, from_email, [to])
 	msg.attach_alternative(html_content, "text/html")

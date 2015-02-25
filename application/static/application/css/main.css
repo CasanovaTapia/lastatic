@@ -14,7 +14,7 @@ padding-bottom:160px;
   height:100%;
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 2s;
-  background-color:#141e28;
+  background-color:rgb(27,43,67);
 }
 .gentlemen-title{
   margin-bottom:20px;
@@ -379,4 +379,29 @@ background-color:green;
 }
 .front-slide{
   height:100%;
+}
+.vision{
+  background-color:rgb(103,39,57);
+  height:100%;
+  font-family: 'Raleway' 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  text-align:center;
+  color:white;
+}
+.vision h1{
+  font-size:60px;
+  margin-top:150px;
+}
+.vision h2{
+  font-size:30px;
+  margin-top:52px;
+}
+.vision h3{
+  font-size:30px;
+  margin-top:52px;
+  margin-bottom:50px;
+}
+.vision img{
+  height:200px;
+  width:2 00px;
 }
