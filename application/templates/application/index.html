@@ -232,6 +232,13 @@ mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
 <script src="{{STATIC_URL}}application/js/fsvs.js"></script>
 <script src="{{STATIC_URL}}application/js/bundle.js"></script>
 
+<script>
+mixpanel.track('page viewed', {
+    'page name' : document.title,
+    'url' : window.location.pathname
+});
+</script>
+
 
 <script>
 $(document).ready( function() {
