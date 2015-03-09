@@ -17,6 +17,7 @@ def send(request):
 	template = "application/index.html"
 
 	htmly = get_template('application/email.html')
+	html_client = get_template('application/email_client.html')
 
 	name = request.POST.get("name", "")
 	year = request.POST.get("year", "")
@@ -32,10 +33,20 @@ def send(request):
 							'type':send_type,
 							'icon':icon })
 
+#Internal Mailing Handler 
+
 	subject, from_email, to = 'New Signup', 'auto@lapel.co', 'jeffrey@lapel.co'
 	html_content = htmly.render(c)
 	msg = EmailMultiAlternatives(subject, html_content, from_email, [to])
 	msg.attach_alternative(html_content, "text/html")
 	msg.send()
 
+# Client Facing Handler
+
+	subject, from_email, to = 'Hello from Lapel', 'Lapel@lapel.co', send_type
+	html_client_content = html_client.render(c)
+	msg = EmailMultiAlternatives(subject, html_client_content, from_email, [to])
+	msg.attach_alternative(html_client_content, "text/html")
+	msg.send()
+	
 	return render_to_response(template, RequestContext(request))
