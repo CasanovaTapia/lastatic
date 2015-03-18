@@ -1,11 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200);
 @import url(http://fonts.googleapis.com/css?family=Voces);
 
-.logo-header{
-margin-top:80px;
-padding-bottom:160px;
+.logo-header img{
+  margin: 0 auto;
 }
-
 .gentlemen-sec{
   text-align:center;
   height:100%;
@@ -13,8 +11,11 @@ padding-bottom:160px;
   -webkit-animation-delay: 2s;
   background-color:rgb(27,43,67);
 }
+.gent{
+  background-color:rgb(27,43,67);
+}
 .gentlemen-title{
-  margin-bottom:20px;
+  margin-bottom:2%;
   color:white;
 }
 .gentlemen-title h1{
@@ -22,13 +23,14 @@ padding-bottom:160px;
   -webkit-font-smoothing: antialiased;
   font-size:50px;
   color:white;
-  margin-top:100px;
+  margin-top:2%;
 }
 .gentlemen img{
 	border-radius: 200px;
 	-webkit-border-radius: 200px;
 	-moz-border-radius: 200px;
   border: white solid 1px;
+  margin: 0 auto;
 }
 .gentlemen h1{
   font-family: 'Raleway' 'sans-serif';
@@ -78,15 +80,14 @@ text-align: center;
   height:100%
 }
 .how-we-do{
-margin-top:20px;
-margin-bottom:20px;
+margin-bottom:2%;
 }
 .how-we-do h1{
 font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
 text-align: center;
-margin-top:100px;
-margin-bottom:50px;
+margin-top:5%;
+margin-bottom:5%;
 }
 .how-we-do i{
 color:rgba(51, 51, 51, 0.83);
@@ -108,28 +109,28 @@ padding-right:50px;
 padding-left:50px;
 }
 .oneway {
-display: inline-block;
 text-align:center;
 margin-top:20px
 }
 .twoway {
-display: inline-block;
 text-align: center;
 margin-top:20px
 }
 .threeway {
-display: inline-block;
 text-align:center;
 margin-top:20px;
 }
 .oneway img{
   margin-bottom:20px;
+  margin: 0 auto;
 }
 .twoway img{
   margin-bottom:20px;
+  margin: 0 auto;
 }
 .threeway img{
   margin-bottom:20px;
+  margin: 0 auto;
 }
 .oneway i{
   border-radius:180%;
@@ -223,12 +224,12 @@ color:white;
 text-align:center;
 font-weight:bold;
 font-size:x-large;
-margin-top:20px;
+margin-top:2%;
 }
 .launchpad-1{
 text-align:center;
 background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/hollywood.jpg");
-padding-bottom:250px;
+padding-bottom:30%;
 background-size:cover;
 -webkit-filter: grayscale(0%);
 border-right:1px solid white;
@@ -238,7 +239,7 @@ background-position:-216px 1px;
 .launchpad-2{
 text-align:center;
 background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/sfgate.jpg");
-padding-bottom:250px;
+padding-bottom:30%;
 background-size:cover;
 -webkit-filter: grayscale(0%);
 border-right:1px solid white;
@@ -246,7 +247,7 @@ border-right:1px solid white;
 .launchpad-3{
 text-align:center;
 background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/nyc.jpg");
-padding-bottom:250px;
+padding-bottom:30%;
 background-size:cover;
 -webkit-filter: grayscale(0%);
 background-position:-455px 1px;
@@ -279,33 +280,33 @@ background-position:1px;
 color:white;
 font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
-padding-top:216px;
+padding-top:20%;
 }
 .launchpad-2 h1{
 color:white;
 font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
-padding-top:216px;
+padding-top:20%;
 }
 .launchpad-3 h1{
 color:white;
 font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
-padding-top:216px;
+padding-top:20%;
 }
 .launchpad-4 h1{
 color:white;
 font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
-padding-top:50px;
+padding-top:5%;
 }
 .launch-title{
 color:black;
 font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
 text-align:center;
-margin-top:50px;
-margin-bottom:50px;
+margin-top:5%;
+margin-bottom:5%;
 font-size:50px
 }
 .launch{
@@ -326,7 +327,7 @@ font-family: 'Raleway' 'sans-serif';
 -webkit-font-smoothing: antialiased;
 text-align:center;
 color:white;
-padding-bottom:5px;
+padding-bottom:20%;
 }
 .social{
 padding-top:60px;
@@ -362,13 +363,18 @@ background-color:green;
     width: 100%; /*img width*/
     height: 100%;
 }
+
+
+
 /*full width container*/
-@media (max-width: 767px) {
+/*
+@media (max-width: 780px) {
     .block {
         margin-left: -20px;
         margin-right: -20px;
     }
 }
+*/
 .front-slide{
   height:100%;
 }
@@ -380,91 +386,57 @@ background-color:green;
   text-align:center;
   color:white;
 }
+.vis{
+  background-color:rgb(103,39,57);
+}
 .vision h1{
   font-size:60px;
-  margin-top:150px;
+  margin-top:10%;
 }
 .vision h2{
   font-size:30px;
-  margin-top:52px;
+  margin-top:2%;
 }
 .vision h3{
   font-size:30px;
-  margin-top:52px;
-  margin-bottom:50px;
+  margin-top:2%;
+  margin-bottom:2%;
 }
 .vision img{
+  margin: 0 auto;
   height:200px;
   width:200px;
 }
 
-/*@media (max-width: 767px) {
-    .onepage-wrapper {
-    }
-    .onepage-wrapper .section {
-      width: 100% !important;
-      height: auto !important;
-    }
-
-}
-
-@media (max-width: 767px) {
-    .vision {
-      height:auto;
-      padding-bottom:20px;
-    }
-    .vision h1{
-      margin-top:0px;
-    }
-    .front-slide {
-      height:auto;
-    }
-    .gentlemen-title h1{
-      margin-top:0px;
-    }
-}*/
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   .gentlemen-title h1{
-    margin-top:0px;
-    font-size:15px;
+    font-size:30px;
   }
   .gentlemen-title{
     margin-bottom:0px;
   }
   .gentlemen img{
-    width:80px;
-    height:80px;
-    display:inline-block;
-    float:left;
+    width:120px;
+    height:120px;
+    margin: 0 auto;
   }
   .gentlemen h1{
-    font-size:12px;
-    display:inline-block;
+    font-size:20px;
   }
   .gentlemen h2{
-    font-size:10px;
+    text-align:center;
+    font-size:15px;
     padding-right:0px;
-    padding-left:88px;
+    padding-left:0px;
   }
 }
 
-@media (max-width: 767px) {
-    .vision h1{
-      font-size:30px;
-      margin-top:0px;
-    }
-    .vision h2{
-      font-size:20px;
-      margin-top:52px;
-    }
-    .vision h3{
-      font-size:15px;
-      margin-top:30px;
-      margin-bottom:10px;
-    }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 780px) {
+  .item-desc{
+  text-align:center;
+  padding-right:0px;
+  padding-left:0px;
+  }
   .how-we-do{
   margin-top:0px;
   margin-bottom:0px;
@@ -477,19 +449,19 @@ background-color:green;
   margin-bottom:0px;
   }
   .oneway img{
-    width:80px;
-    height:80px;
-    float:left;
+    width:120px;
+    height:120px;
+    margin: 0 auto;
   }
   .twoway img{
-    width:80px;
-    height:80px;
-    float:left;
+    width:120px;
+    height:120px;
+    margin: 0 auto;
   }
   .threeway img{
-    width:80px;
-    height:80px;
-    float:left;
+    width:120px;
+    height:120px;
+    margin: 0 auto;
   }
   .item-font{
     font-size:15px;
@@ -501,7 +473,7 @@ background-color:green;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   .lookbook h1{
     margin-top:0px;
     font-size:20px;
@@ -512,38 +484,76 @@ background-color:green;
     font-size:20px;
   }
   .lookbook h3{
-    margin-bottom:14px;
+    margin-bottom:1%;
     font-size:20px;
   }
   .lookbook-1{
     background-image: url("../img/upscale.jpg");
-    background-size:auto;
-    border-right:1px solid white;
-    background-position:1px -106px;
+    background-size:cover;
+    padding-bottom:20%;
+    background-position:0px -170px
   }
   .lookbook-2{
     background-image: url("../img/ucas.png");
-    background-size:auto;
-    border-right:1px solid white;
-    padding-bottom:350px;
-    background-position:-67px 1px;
+    background-size:cover;
+    padding-bottom:20%;
+    background-position:0px 0px
   }
   .lookbook-3{
     background-image:url("../img/inst.png");
     background-size:cover;
-    padding-bottom:350px;
-    background-position:-115px 1px
+    padding-bottom:20%;
+    background-position:0px 0px
   }
 }
-/*
-@media (max-width: 767px) {
-    .concierge {
-      height:auto;
-    }
-    .concierge h1{
-      margin-top:0px;
-    }
+
+@media (max-width: 780px) {
+.launchpad-1 h1{
+  padding-top:2%;
 }
+.launchpad-2 h1{
+  padding-top:2%;
+}
+.launchpad-3 h1{
+  padding-top:2%;
+}
+.launchpad-1{
+text-align:center;
+padding-bottom:12%;
+background-size:cover;
+text-align:center;
+border-bottom:1px solid white;
+background-position:0px 0px;
+}
+.launchpad-2{
+text-align:center;
+padding-bottom:12%;
+background-size:cover;
+border-bottom: 1px solid white;
+background-position:0px 0px;
+}
+.launchpad-3{
+text-align:center;
+padding-bottom:12%;
+background-size:cover;
+border-bottom: 1px solid white;
+border-top: 1px solid white;
+background-position:0px 0px;
+ }
+}
+
+@media (max-width: 780px) {
+.footer{
+  padding-bottom:0%;
+  }
+.nav{
+  padding-top:0%;
+}
+.social{
+padding-top:2%;
+}
+}
+/*
 
 @media (max-width: 767px) {
     .carousel {
