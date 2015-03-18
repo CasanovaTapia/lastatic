@@ -229,7 +229,7 @@ margin-top:2%;
 .launchpad-1{
 text-align:center;
 background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/hollywood.jpg");
-padding-bottom:30%;
+padding-bottom:28%;
 background-size:cover;
 -webkit-filter: grayscale(0%);
 border-right:1px solid white;
@@ -239,7 +239,7 @@ background-position:-216px 1px;
 .launchpad-2{
 text-align:center;
 background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/sfgate.jpg");
-padding-bottom:30%;
+padding-bottom:28%;
 background-size:cover;
 -webkit-filter: grayscale(0%);
 border-right:1px solid white;
@@ -247,7 +247,7 @@ border-right:1px solid white;
 .launchpad-3{
 text-align:center;
 background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../img/nyc.jpg");
-padding-bottom:30%;
+padding-bottom:28%;
 background-size:cover;
 -webkit-filter: grayscale(0%);
 background-position:-455px 1px;
