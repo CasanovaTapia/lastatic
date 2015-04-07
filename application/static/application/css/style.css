@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,200);
 
 /* Reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
@@ -22,7 +22,7 @@ html {
 	text-transform: uppercase;
 	font-weight: normal;
 	letter-spacing: 2px;
-	font-weight: 400;
+	font-weight: 500;
 }
 .btn:hover,
 .btn:focus,
@@ -31,6 +31,11 @@ html {
     border: none;
 	background:rgba(0, 0, 0, 0.55);
 	color: #fff;
+}
+
+.delay {
+	-webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+	animation-delay: .5s;
 }
 
 /* Base */
@@ -48,15 +53,15 @@ body {
 
 h1, h2 {
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 6px;
 }
 h2 {
-	font-size: 2.5em;
+	font-size: 3em;
 }
 h3 {
 	font-size: 1.5em;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 }
 h4 {
 	font-size: 1.25em;
@@ -64,6 +69,9 @@ h4 {
 }
 .heading{
     margin-top: 50px;
+}
+.fp-tableCell {
+	vertical-align: top!important;
 }
 @media screen and (min-width:441px){
 	.hide-lg {
@@ -102,16 +110,24 @@ h4 {
     color: #fff;
 }
 #logo-header{
-    margin: 0 auto;
+    margin: 5% 33% 0 auto;
     max-width: 350px;
 }
 #tagline{
 	font-size: 1.2em;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
+	font-weight: 500;
+	margin-top: -50px;
 }
 .btn-top {
 	margin: 20px 7px 10px 7px;
     width: 100px;
+}
+@media screen and (max-width:440px) {
+	#logo-header{
+	    margin: 5% auto 0 auto;
+	    max-width: 350px;
+	}
 }
 
 /* VISION */
@@ -127,7 +143,7 @@ h4 {
     margin-top:30%;
 	margin-bottom: 30px;
 }
-#vision h2 h4{
+#vision h2 h4 {
     margin-top:2%;
     margin-bottom:2%;
     font-weight: 400;
@@ -164,7 +180,7 @@ h4 {
     background-color:rgba(0, 0, 0, 0.33);
     color: #fff;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 6px;
 }
 #lookbook .btn{
     font-size:20px;
@@ -199,13 +215,13 @@ h4 {
 		background-size:cover;
 	}
 	.lookbook-item {
-		height: 33%;
+		height: 33.3%;
 	}
 }
 
 /* SERVICE */
 #service {
-    background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/urban/pic14.jpg");
+    background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/services.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -214,21 +230,31 @@ h4 {
     margin: 0 auto;
 	color: #fff;
 }
-
+#service .heading {
+	margin-top: 100px;
+}
 .service-item img {
-    width:120px;
-    height:120px;
-    margin: 40% auto 50px auto;
-	opacity: .6;
+    width:160px;
+    height:160px;
+    margin: 20% auto 50px auto;
+	opacity: .8;
+}
+#service h3 {
+	font-weight: 500;
+	font-size: 1.3em;
 }
 #service p {
     -webkit-font-smoothing: antialiased;
-    font-weight: 400;
+    font-weight: 200;
 	line-height: 130%;
-	max-width: 70%;
+	max-width: 80%;
 	margin: 20px auto 20px auto;
+	text-align: justify;
 }
 @media screen and (max-width:440px) {
+	#service .heading {
+		margin-top: 5px;
+	}
 	#service h2 {
 		margin-top: 5px;
 		font-size: 1.5em;
@@ -245,14 +271,14 @@ h4 {
 
 /* GENTLEMEN */
 #gentlemen {
-    background-image: url("../images/gent.jpg");
+    background-image: url("../images/linen.jpg");
 	background-size: cover;
     color: #fff;
     height:100%;
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -webkit-font-smoothing: antialiased;
-	font-weight: 400;
+	font-weight: 200;
 }
 #gentlemen img{
 	border-radius: 200px;
@@ -261,17 +287,33 @@ h4 {
     border: white solid 1px;
     margin: 0 auto;
 	opacity: .9;
+	width: 200px;
+}
+#gentlemen hr {
+	color: #fff;
+    border: 0;
+    height: 1px;
+	width: 50%;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
 }
 .gent-item {
-	margin: 10% auto 0 auto;
+	margin: 5% auto 0 auto;
 }
 #gentlemen h3 {
 	margin: 20px 0 20px 0;
+	font-weight: 500;
 }
 #gentlemen p {
 	width: 80%;
 	margin: 0 auto;
 	line-height: 130%;
+	text-align: justify;
+}
+.btn-test {
+	margin-top: 60px;
 }
 @media screen and (max-width:440px) {
 	.gent-item {
@@ -294,6 +336,9 @@ h4 {
 		width:30%;
 		height:30%;
 		margin: 20px auto 10px auto;
+	}
+	.btn-test {
+		margin-top: -8px;
 	}
 }
 
@@ -318,6 +363,9 @@ h4 {
 }
 #launch .fp-tableCell {
   vertical-align: top;
+}
+#launch h3 {
+	font-weight: 500;
 }
 .launchpad-1{
     background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/hollywood.jpg");
@@ -402,7 +450,7 @@ h4 {
 .nav{
     font-size: 16px;
     line-height: 1.75em;
-    font-weight: bold;
+    font-weight: 200;
     color: black;
     padding-top:65px;
 }
@@ -470,7 +518,6 @@ h4 {
 	background:#fff;
 	color: #555;
 }
-
 
 @media screen and (max-width: 540px) {
 	#wrapper { padding:40px; }
