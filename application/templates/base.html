@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Lapel</title>
+    <meta name="google-site-verification" content="v2Xg2jEZ7-AhgETeok7TsFzBP24ABc0tQbRUUdtDZdQ" />
+    <meta name="description" content="The platform for men's styling, shopping, and curation.">
+    <meta name="keywords" content="lapel,menswear,LA,los angeles,design yourself,lapel la, welcome to better,san francisco">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{STATIC_URL}}images/favicon-96x96.png">
+	<meta itemprop="name" content="Lapel">
+    <meta itemprop="description" content="The platform for men's styling, shopping, and curation.">
+    <meta itemprop="url" content="http://lapel.co/">
+    <meta itemprop="image" content="http://lapel/">
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static '/css/swipebox.min.css' %}">
+	<link rel="stylesheet" href="{% static '/css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fullPage.css' %}">
+
+
+	{% block header %}
+		<title>Lapel</title>
+	{% endblock header %}
+
+	<!-- start Mixpanel -->
+<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
+</script>
+<!-- end Mixpanel -->
+</head>
+
+<body>
+	{% block content %}
+	{% endblock content %}
+
+	{% block scripts %}
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="{% static '/js/main.js' %}"></script>
+		<script src="{% static '/js/retina.js' %}"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="{% static '/js/jquery.swipebox.min.js' %}"></script>
+		<script type="text/javascript" src="{% static '/js/jquery.fullPage.min.js' %}"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+				});
+			});
+		</script>
+
+		<script>
+			mixpanel.track('page viewed', {
+			    'page name' : document.title,
+			    'url' : window.location.pathname
+			});
+		</script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-60151425-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+		<script>
+			$( '#urban' ).click( function( e ) {
+				e.preventDefault();
+				$.swipebox( [
+					{ href:'../static/images/urban/pic1.jpg'},
+					{ href:'../static/images/urban/pic2.jpg'},
+					{ href:'../static/images/urban/pic3.jpg'},
+					{ href:'../static/images/urban/pic4.jpg'},
+					{ href:'../static/images/urban/pic5.jpg'},
+					{ href:'../static/images/urban/pic6.jpg'},
+					{ href:'../static/images/urban/pic7.jpg'},
+					{ href:'../static/images/urban/pic8.jpg'},
+					{ href:'../static/images/urban/pic9.jpg'},
+					{ href:'../static/images/urban/pic10.jpg'},
+					{ href:'../static/images/urban/pic12.jpg'},
+					{ href:'../static/images/urban/pic13.jpg'},
+					{ href:'../static/images/urban/pic14.jpg'},
+					{ href:'../static/images/urban/pic15.jpg'},
+					{ href:'../static/images/urban/pic16.jpg'},
+					{ href:'../static/images/urban/pic17.jpg'},
+					{ href:'../static/images/urban/pic18.jpg'},
+					{ href:'../static/images/urban/pic19.jpg'},
+					{ href:'../static/images/urban/pic20.jpg'},
+					{ href:'../static/images/urban/pic21.jpg'},
+					{ href:'../static/images/urban/pic22.jpg'},
+					{ href:'../static/images/urban/pic23.jpg'},
+					{ href:'../static/images/urban/pic24.jpg'},
+					{ href:'../static/images/urban/pic25.jpg'},
+					{ href:'../static/images/urban/pic26.jpg'},
+					{ href:'../static/images/urban/pic27.jpg'},
+					{ href:'../static/images/urban/pic28.jpg'},
+					{ href:'../static/images/urban/pic29.jpg'},
+					{ href:'../static/images/urban/pic30.jpg'},
+					{ href:'../static/images/urban/pic31.jpg'},
+					{ href:'../static/images/urban/pic32.jpg'},
+					{ href:'../static/images/urban/pic33.jpg'},
+					{ href:'../static/images/urban/pic34.jpg'},
+					{ href:'../static/images/urban/pic35.jpg'},
+					{ href:'../static/images/urban/pic36.jpg'},
+					{ href:'../static/images/urban/pic37.jpg'},
+					{ href:'../static/images/urban/pic38.jpg'},
+					{ href:'../static/images/urban/pic39.jpg'},
+					{ href:'../static/images/urban/pic40.jpg'},
+					{ href:'../static/images/urban/pic41.jpg'},
+					{ href:'../static/images/urban/pic42.jpg'},
+					{ href:'../static/images/urban/pic43.jpg'},
+					{ href:'../static/images/urban/pic44.jpg'},
+					{ href:'../static/images/urban/pic45.jpg'},
+					{ href:'../static/images/urban/pic46.jpg'},
+					{ href:'../static/images/urban/pic47.jpg'},
+					{ href:'../static/images/urban/pic48.jpg'},
+					{ href:'../static/images/urban/pic49.jpg'},
+					{ href:'../static/images/urban/pic50.jpg'},
+				] );
+			} );
+		</script>
+
+		<script>
+			$( '#upscale' ).click( function( e ) {
+				e.preventDefault();
+				$.swipebox( [
+					{ href:'../static/images/upscale/pic1.jpg'},
+					{ href:'../static/images/upscale/pic2.jpg'},
+					{ href:'../static/images/upscale/pic3.jpg'},
+					{ href:'../static/images/upscale/pic4.jpg'},
+					{ href:'../static/images/upscale/pic5.jpg'},
+					{ href:'../static/images/upscale/pic6.jpg'},
+					{ href:'../static/images/upscale/pic7.jpg'},
+					{ href:'../static/images/upscale/pic8.jpg'},
+					{ href:'../static/images/upscale/pic9.jpg'},
+					{ href:'../static/images/upscale/pic10.jpg'},
+					{ href:'../static/images/upscale/pic12.jpg'},
+					{ href:'../static/images/upscale/pic13.jpg'},
+					{ href:'../static/images/upscale/pic14.jpg'},
+					{ href:'../static/images/upscale/pic15.jpg'},
+					{ href:'../static/images/upscale/pic16.jpg'},
+					{ href:'../static/images/upscale/pic17.jpg'},
+					{ href:'../static/images/upscale/pic18.jpg'},
+					{ href:'../static/images/upscale/pic19.jpg'},
+					{ href:'../static/images/upscale/pic20.jpg'},
+					{ href:'../static/images/upscale/pic21.jpg'},
+					{ href:'../static/images/upscale/pic22.jpg'},
+					{ href:'../static/images/upscale/pic23.jpg'},
+					{ href:'../static/images/upscale/pic24.jpg'},
+					{ href:'../static/images/upscale/pic25.jpg'},
+					{ href:'../static/images/upscale/pic26.jpg'},
+					{ href:'../static/images/upscale/pic27.jpg'},
+					{ href:'../static/images/upscale/pic28.jpg'},
+					{ href:'../static/images/upscale/pic29.jpg'},
+					{ href:'../static/images/upscale/pic30.jpg'},
+					{ href:'../static/images/upscale/pic31.jpg'},
+					{ href:'../static/images/upscale/pic32.jpg'},
+					{ href:'../static/images/upscale/pic33.jpg'},
+					{ href:'../static/images/upscale/pic34.jpg'},
+					{ href:'../static/images/upscale/pic35.jpg'},
+					{ href:'../static/images/upscale/pic36.jpg'},
+					{ href:'../static/images/upscale/pic37.jpg'},
+					{ href:'../static/images/upscale/pic38.jpg'},
+					{ href:'../static/images/upscale/pic39.jpg'},
+					{ href:'../static/images/upscale/pic40.jpg'},
+					{ href:'../static/images/upscale/pic41.jpg'},
+					{ href:'../static/images/upscale/pic42.jpg'},
+					{ href:'../static/images/upscale/pic43.jpg'},
+					{ href:'../static/images/upscale/pic44.jpg'},
+					{ href:'../static/images/upscale/pic45.jpg'},
+					{ href:'../static/images/upscale/pic46.jpg'},
+					{ href:'../static/images/upscale/pic47.jpg'},
+					{ href:'../static/images/upscale/pic48.jpg'},
+					{ href:'../static/images/upscale/pic49.jpg'},
+					{ href:'../static/images/upscale/pic50.jpg'},
+				] );
+			} );
+		</script>
+
+		<script>
+			$( '#conservative' ).click( function( e ) {
+				e.preventDefault();
+				$.swipebox( [
+					{ href:'../static/images/conservative/pic1.jpg'},
+					{ href:'../static/images/conservative/pic2.jpg'},
+					{ href:'../static/images/conservative/pic3.jpg'},
+					{ href:'../static/images/conservative/pic4.jpg'},
+					{ href:'../static/images/conservative/pic5.jpg'},
+					{ href:'../static/images/conservative/pic6.jpg'},
+					{ href:'../static/images/conservative/pic7.jpg'},
+					{ href:'../static/images/conservative/pic8.jpg'},
+					{ href:'../static/images/conservative/pic9.jpg'},
+					{ href:'../static/images/conservative/pic10.jpg'},
+					{ href:'../static/images/conservative/pic12.jpg'},
+					{ href:'../static/images/conservative/pic13.jpg'},
+					{ href:'../static/images/conservative/pic14.jpg'},
+					{ href:'../static/images/conservative/pic15.jpg'},
+					{ href:'../static/images/conservative/pic16.jpg'},
+					{ href:'../static/images/conservative/pic17.jpg'},
+					{ href:'../static/images/conservative/pic18.jpg'},
+					{ href:'../static/images/conservative/pic19.jpg'},
+					{ href:'../static/images/conservative/pic20.jpg'},
+					{ href:'../static/images/conservative/pic21.jpg'},
+					{ href:'../static/images/conservative/pic22.jpg'},
+					{ href:'../static/images/conservative/pic23.jpg'},
+					{ href:'../static/images/conservative/pic24.jpg'},
+					{ href:'../static/images/conservative/pic25.jpg'},
+					{ href:'../static/images/conservative/pic26.jpg'},
+					{ href:'../static/images/conservative/pic27.jpg'},
+					{ href:'../static/images/conservative/pic28.jpg'},
+					{ href:'../static/images/conservative/pic29.jpg'},
+					{ href:'../static/images/conservative/pic30.jpg'},
+					{ href:'../static/images/conservative/pic31.jpg'},
+					{ href:'../static/images/conservative/pic32.jpg'},
+					{ href:'../static/images/conservative/pic33.jpg'},
+					{ href:'../static/images/conservative/pic34.jpg'},
+					{ href:'../static/images/conservative/pic35.jpg'},
+					{ href:'../static/images/conservative/pic36.jpg'},
+					{ href:'../static/images/conservative/pic37.jpg'},
+					{ href:'../static/images/conservative/pic38.jpg'},
+					{ href:'../static/images/conservative/pic39.jpg'},
+					{ href:'../static/images/conservative/pic40.jpg'},
+					{ href:'../static/images/conservative/pic41.jpg'},
+					{ href:'../static/images/conservative/pic42.jpg'},
+					{ href:'../static/images/conservative/pic43.jpg'},
+					{ href:'../static/images/conservative/pic44.jpg'},
+					{ href:'../static/images/conservative/pic45.jpg'},
+					{ href:'../static/images/conservative/pic46.jpg'},
+					{ href:'../static/images/conservative/pic47.jpg'},
+					{ href:'../static/images/conservative/pic48.jpg'},
+					{ href:'../static/images/conservative/pic49.jpg'},
+					{ href:'../static/images/conservative/pic50.jpg'},
+				] );
+			} );
+		</script>
+	{% endblock scripts %}
+</body>
+</html>
