@@ -35,7 +35,7 @@ def send(request):
 
 #Internal Mailing Handler 
 
-	subject, from_email, to = 'New Signup', 'auto@lapel.co', 'jeffrey@lapel.co'
+	subject, from_email, to = 'New Signup', 'auto@lapel.co', 'concierge@lapel.co'
 	html_content = htmly.render(c)
 	msg = EmailMultiAlternatives(subject, html_content, from_email, [to])
 	msg.attach_alternative(html_content, "text/html")
