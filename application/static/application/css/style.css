@@ -13,9 +13,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html {
 	height:100%;
 }
-.fp-section.fp-table, .fp-slide.fp-table {
-  width: inherit!important;
-}
 /* Buttons */
 .btn {
 	background:rgba(0, 0, 0, 0.22);
@@ -35,9 +32,28 @@ html {
 	color: #fff;
 }
 
+/* ANIMATION */
 .delay {
 	-webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
 	animation-delay: .5s;
+}
+.delay-1 {
+	-webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+	animation-delay: 1s;
+}
+.delay-2 {
+	-webkit-animation-delay: 1.5s; /* Chrome, Safari, Opera */
+	animation-delay: 1.5s;
+}
+.delay-3 {
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+	animation-delay: 2s;
+}
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 /* Base */
@@ -72,9 +88,6 @@ h4 {
 .heading{
     margin-top: 50px;
 }
-.fp-tableCell {
-	vertical-align: top!important;
-}
 @media screen and (min-width:441px){
 	.hide-lg {
 		display: none;
@@ -98,14 +111,6 @@ h4 {
 		font-size: 1em;
 		line-height: 1.25em;
 	}
-	#fp-nav.right {
-	  right: 10px!important;
-	}
-
-}
-/* RIGHT NAVIGATION */
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-	background: #fff;
 }
 
 /* HEADER */
@@ -163,6 +168,10 @@ h4 {
 }
 #vision h3 {
 	text-transform: none;
+}
+#vision-button {
+	position: relative;
+	top: 50%;
 }
 @media screen and (max-width:440px) {
 	#vision {
@@ -373,6 +382,7 @@ h4 {
 #launch{
     border-bottom:1px solid white;
 	color: #fff;
+	height: 90%;
 }
 #launch h2{
 	font-size: 1.75em;
@@ -388,9 +398,6 @@ h4 {
     font-size:14px;
 	border: none;
 }
-#launch .fp-tableCell {
-  vertical-align: top;
-}
 #launch h3 {
 	font-weight: 500;
 }
@@ -400,21 +407,21 @@ h4 {
     -webkit-filter: grayscale(0%);
     border-right:1px solid white;
     background-position:-216px 1px;
-	height: 80%;
+	height: 100%;
 }
 .launchpad-2{
     background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/sfgate.jpg");
     background-size:cover;
     -webkit-filter: grayscale(0%);
     border-right:1px solid white;
-	height: 80%;
+	height: 100%;
 }
 .launchpad-3{
     background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/nyc.jpg");
     background-size:cover;
     -webkit-filter: grayscale(0%);
     background-position:-455px 1px;
-	height: 80%;
+	height: 100%;
 }
 .launchpad-1:hover{
     -webkit-filter: grayscale(50%);
@@ -445,19 +452,24 @@ h4 {
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
     color: black;
-    margin-top: -150px;
+    margin-top: 0;
 	padding-bottom: 0;
+	height: 5%;
+}
+#footer-logo img {
+	height: auto;
+	width: 30%;
 }
 .social{
-    padding-top:60px;
+    padding-top:3%;
 }
 .social h1{
-    font-size:20px;
+    font-size:1.5em;
 }
 .social a{
     display:inline-block;
     color:black;
-    padding-right:10px;
+    padding-right:2%;
 }
 .social i{
     color:black;
@@ -475,16 +487,16 @@ h4 {
 }
 
 .nav{
-    font-size: 16px;
-    line-height: 1.75em;
+    font-size: 1.25empx;
+    line-height: 1.5em;
     font-weight: 200;
     color: black;
-    padding-top:65px;
+    padding-top:10%;
 }
 .nav li{
     display: inline;
     list-style-type: none;
-    padding-right: 10px;
+    padding-right: 1%;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -512,9 +524,9 @@ h4 {
 		height: auto;
 	}
 	.social{
-	    padding-top:100px;
+	    padding-top:0px;
 		font-size: .5em;
-		margin: 10px auto auto 200px;
+		margin: 0 auto 0 200px;
 	}
 }
 

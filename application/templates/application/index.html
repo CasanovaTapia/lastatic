@@ -1,90 +1,88 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div id="fullpage" class="main">
-        <div id="header" class="row section">
-            <div id="delay-fade" class="col-md-12 animated fadeIn delay text-center">
-                <img id="logo-header" class="header img-responsive" src="{{STATIC_URL}}application/images/lapel_white.png"/>
-                <h2 id="tagline">Welcome to better</h2>
-                <a href="#launch"><button type="button" class="btn btn-top animated zoomIn delay">Join</button></a>
+    <div class="main preload container-fluid">
+        <div id="header" class="row">
+            <div class="col-md-12 text-center">
+                <img id="logo-header" class="header img-responsive animated fadeIn delay " src="{{STATIC_URL}}application/images/lapel_white.png"/>
+                <h2 id="tagline" class="animated fadeIn delay-1">Welcome to better</h2>
+            </div>
+            <div class="col-md-12 animated zoomIn delay-1 text-center">
+                <a href="#launch"><button type="button" class="btn btn-top animated zoomIn delay hvr-float">Join</button></a>
                 <!-- <a href="#"><button type="button" class="btn btn-top">Log In</button></a> -->
             </div>
-
         </div>
 
-        <div id="vision" class="row section">
+        <div id="vision" class="row">
         	<div class="col-md-5 text">
-        		<h2 id="vision-heading">Shopping for<br/>clothing sucks</h2>
-                <div class="animated fadeInLeft">
+        		<h2 id="vision-heading" class="wow animated fadeInUp">Shopping for<br/>clothing sucks</h2>
+                <div id="vision-detail" class="wow animated fadeIn delay" data-wow-offset="30">
             		<h3>Lapel is <i>the</i> new platform for menswear,
             		built around gentlemen's preferences everywhere.</h3>
                 </div>
         	</div>
+            <div id="vision-button" class="col-md-3 col-md-offset-3 wow animated fadeInRight delay-1">
+                <img class="img-responsive" data-toggle="modal" data-target="#refillable" src="{{STATIC_URL}}application/images/button.png"/>
+            </div>
         </div>
 
-        <div id="service" class="row section text-center">
+        <div id="service" class="row text-center">
         	<div class="col-md-12 heading">
         		<h2>Anything, from anywhere</h2>
         	</div>
-            <div class="service-item col-md-4">
-                <img class="img-responsive hide-sm" src="{{STATIC_URL}}application/images/calendar.png"/>
-                <img class="img-responsive hide-lg" data-toggle="modal" data-target="#refillable" src="{{STATIC_URL}}application/images/calendar.png"/>
+            <div class="service-item col-md-4 wow animated bounceInDown delay">
+                <img class="img-responsive" data-toggle="modal" data-target="#refillable" src="{{STATIC_URL}}application/images/calendar.png"/>
                 <h3>Refillable<br/>essentials</h3>
-                <p class="hide-sm">The morning routine is rough. We make it easier by delivering you all of your personal care items in one box, on your schedule.</p>
             </div>
-        	<div class="service-item col-md-4">
-        		<img class="img-responsive hide-sm"  src="{{STATIC_URL}}application/images/closet.png"/>
-        		<img class="img-responsive hide-lg modal-img" data-toggle="modal" data-target="#wardrobe" src="{{STATIC_URL}}application/images/closet.png"/>
+        	<div class="service-item col-md-4 wow animated bounceInDown delay-1">
+        		<img class="img-responsive modal-img" data-toggle="modal" data-target="#wardrobe" src="{{STATIC_URL}}application/images/closet.png"/>
         		<h3>Wardrobe<br/>Construction</h3>
-        		<p class="hide-sm">Built around you and your lifestyle, we'll build or polish your entire closet within the confines of your busy schedule.</p>
         	</div>
-        	<div class="service-item col-md-4">
-        		<img class="img-responsive hide-sm" src="{{STATIC_URL}}application/images/box.png"/>
-        		<img class="img-responsive hide-lg" data-toggle="modal" data-target="#delivery" src="{{STATIC_URL}}application/images/box.png"/>
+        	<div class="service-item col-md-4 wow animated bounceInDown delay-2">
+        		<img class="img-responsive" data-toggle="modal" data-target="#delivery" src="{{STATIC_URL}}application/images/box.png"/>
         		<h3>On-Demand<br/>Delivery</h3>
-        		<p class="hide-sm">Brick & Mortar is archaic. Have everything you want, delivered wherever you are, whenever you need it.</p>
         	</div>
             <!-- <div class="col-md-12">
                 <a href="#"><button type="button" class="btn btn-test animated bounce"></button></a>
             </div> -->
         </div>
 
-        <div id="lookbook" class="row section text-center">
+        <div id="lookbook" class="row text-center">
         	<div id="lookbook-1" class="col-md-4 lookbook-item">
         		<h3>Urban<br/>Chic</h3>
-        		<button id="urban" class="btn">View Lookbook</button>
+        		<button id="urban" class="btn wow animated zoomIn delay">View Lookbook</button>
         	</div>
         	<div id="lookbook-2" class="col-md-4 lookbook-item">
         		<h3>Upscale<br/>Casual</h3>
-        		<button id="upscale" class="btn">View Lookbook</button>
+        		<button id="upscale" class="btn wow animated zoomIn delay">View Lookbook</button>
         	</div>
         	<div id="lookbook-3" class="col-md-4 lookbook-item">
         		<h3>Classic<br/>Conservative</h3>
-        		<button id="conservative" class="btn">View Lookbook</button>
+        		<button id="conservative" class="btn wow animated zoomIn delay">View Lookbook</button>
         	</div>
         </div>
 
-        <div id="gentlemen" class="row section text-center">
+        <div id="gentlemen" class="row text-center">
         	<div class="animated fadein">
         		<div class="col-md-12 heading">
         			<h2>Our Gentlemen</h2>
                     <hr>
         		</div>
-        		<div class="col-md-4 gent-item">
+        		<div class="col-md-4 gent-item wow animated bounceInDown delay">
         			<img class="img-responsive hide-sm" src="{{STATIC_URL}}application/images/gs.png"/>
         			<img class="img-responsive hide-lg" data-toggle="modal" data-target="#sartorialist" src="{{STATIC_URL}}application/images/gs.png"/>
         			<h3>The Sartorialist</h3>
                     <hr>
         			<p class="hide-sm">A man about town who knows what to wear, and how to wear it. We’re here to supplement your already polished understanding of style.</p>
         		</div>
-        		<div class="col-md-4 gent-item">
+        		<div class="col-md-4 gent-item wow animated bounceInDown delay-1">
         			<img class="img-responsive hide-sm" src="{{STATIC_URL}}application/images/ga.png"/>
         			<img class="img-responsive hide-lg" data-toggle="modal" data-target="#journeyman" src="{{STATIC_URL}}application/images/ga.png"/>
         			<h3>The Journeyman</h3>
                     <hr>
         			<p class="hide-sm">You’ve ridden with the fads. You’ve seen it all. A bit of disillusionment and a rougher edge here or there is expected. We’re here to bring you up to date.</p>
         		</div>
-        		<div class="col-md-4 gent-item">
+        		<div class="col-md-4 gent-item wow animated bounceInDown delay-2">
         			<img class="img-responsive hide-sm" src="{{STATIC_URL}}application/images/whip.png"/>
         			<img class="img-responsive hide-lg" data-toggle="modal" data-target="#whipper" src="{{STATIC_URL}}application/images/whip.png"/>
         			<h3>The Whippersnapper</h3>
@@ -93,29 +91,29 @@
         		</div>
         	</div>
             <div class="col-md-12">
-                <a href="#"><button type="button" class="btn btn-test animated bounce">Which are you?</button></a>
+                <a href="#gentlemen"><button type="button" class="btn btn-test wow animated zoomIn delay-2">Which are you?</button></a>
             </div>
         </div>
 
-        <div id="launch" class="row section text-center">
+        <div id="launch" class="row text-center">
         	<div class="launch-item launchpad-1 col-md-4">
         		<h2>Los Angeles</h2>
                 <h3>April 2015</h3>
-        		<button type="button" class="btn" data-toggle="modal" data-target="#join">Join</button>
+        		<button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#join">Join</button>
         	</div>
         	<div class="launch-item launchpad-2 col-md-4">
         		<h2>San Francisco</h2>
                 <h3>June 2015</h3>
-        		<button type="button" class="btn" data-toggle="modal" data-target="#join">Join</button>
+        		<button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#join">Join</button>
         	</div>
         	<div class="launch-item launchpad-3 col-md-4">
         		<h2>New York City</h2>
                 <h3>Sept 2015</h3>
-        		<button type="button"class="btn" data-toggle="modal" data-target="#join">Join</button>
+        		<button type="button"class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#join">Join</button>
         	</div>
         </div>
 
-        <div id="footer" class="row text-center">
+        <div id="footer" class="row text-center wow animated fadeInUp delay-1">
         	<div class="social col-md-4">
         		<a href="https://angel.co/lapel"><i class="fa fa-angellist fa-2x"></i></a>
         		<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
@@ -123,7 +121,7 @@
         		<a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
         	</div>
         	<div id="footer-logo" class="col-md-4">
-        		<img width="150px" height="150px" src="{{STATIC_URL}}application/images/lapel_black.png"/>
+        		<img src="{{STATIC_URL}}application/images/lapel_black.png"/>
         	</div>
 
         	<div id="footer-links" class="nav-control col-md-4 hide-sm">

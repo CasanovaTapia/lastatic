@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{STATIC_URL}}application/css/swipebox.min.css">
 	<link rel="stylesheet" href="{{STATIC_URL}}application/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}application/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}application/css/hover-min.css" media="all">
 
 
 	{% block header %}
@@ -45,16 +45,17 @@ mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="{{STATIC_URL}}application/js/jquery.swipebox.min.js"></script>
-		<script type="text/javascript" src="{{STATIC_URL}}application/js/jquery.fullPage.min.js"></script>
+		<!-- // <script type="text/javascript" src="{{STATIC_URL}}application/js/jquery.fullPage.min.js"></script> -->
+		<script type="text/javascript" src="{{STATIC_URL}}application/js/wow.min.js"</script>
 
 		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#fullpage').fullpage({
-					navigation: true,
-					navigationPosition: 'right',
-					navigationTooltips: ['Main', 'Our Vision', 'Our Services', 'Lookbooks', 'Our Gentlemen', 'Join']
-				});
+			$("window").load(function() {
+			$("body").removeClass("preload");
 			});
+		</script>
+
+		<script>
+			new WOW().init();
 		</script>
 
 		<script>
