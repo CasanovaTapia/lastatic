@@ -147,6 +147,7 @@ h4 {
 #vision {
     background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/vision.jpg");
 	background-size: cover;
+	background-position: bottom;
 	height:100%;
     -webkit-font-smoothing: antialiased;
     text-align:center;
@@ -428,6 +429,21 @@ h4 {
 .launchpad-4:hover{
     -webkit-filter: grayscale(50%);
 }
+/* Apply Modal */
+#checkbox {
+	float: left;
+}
+#checkbox-label {
+	margin-top: 2%;
+	margin-left: 5%;
+}
+#apply .modal-footer .btn {
+	float: left;
+}
+#apply .modal-dialog  {
+	width:30%;
+}
+
 @media screen and (max-width:440px) {
 	.launch-item {
 		height: 30%;
@@ -437,6 +453,9 @@ h4 {
 	    -webkit-font-smoothing: antialiased;
 	    margin-top:0;
 		padding-top: 20px;
+	}
+	#apply .modal-dialog  {
+		width:90%;
 	}
 }
 

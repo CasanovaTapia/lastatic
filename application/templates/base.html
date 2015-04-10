@@ -52,9 +52,26 @@ mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
 				$('#fullpage').fullpage({
 					navigation: true,
 					navigationPosition: 'right',
-					navigationTooltips: ['Main', 'Our Vision', 'Our Services', 'Lookbooks', 'Our Gentlemen', 'Join']
+					navigationTooltips: ['Main', 'Our Vision', 'Our Services', 'Lookbooks', 'Our Gentlemen', 'Apply']
 				});
 			});
+		</script>
+
+		<!-- For Apply Modal -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var checkbox = document.getElementById('checkbox');
+				var delivery_div = document.getElementById('delivery');
+				var showHiddenDiv = function(){
+				   if(checkbox.checked) {
+				     delivery_div.style['display'] = 'block';
+				   } else {
+				     delivery_div.style['display'] = 'none';
+				   }
+				}
+		checkbox.onclick = showHiddenDiv;
+		showHiddenDiv();
+		});
 		</script>
 
 		<script>
