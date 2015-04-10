@@ -13,16 +13,29 @@
             </div>
         </div>
 
-        <div id="vision" class="row">
-        	<div class="col-md-5 text">
-        		<h2 id="vision-heading" class="wow animated fadeInUp">Shopping for<br/>clothing sucks</h2>
-                <div id="vision-detail" class="wow animated fadeIn delay" data-wow-offset="30">
-            		<h3>Lapel is <i>the</i> new platform for menswear,
-            		built around gentlemen's preferences everywhere.</h3>
+        <div id="vision">
+            <div class="row">
+            	<div class="col-md-5 text">
+            		<h2 id="vision-heading" class="wow animated fadeInUp">Shopping for<br/>clothing sucks</h2>
+                    <div id="vision-detail" class="wow animated fadeIn delay" data-wow-offset="30">
+                		<h3>Lapel is <i>the</i> new platform for menswear,
+                		built around gentlemen's preferences everywhere.</h3>
+                    </div>
+            	</div>
+            </div>
+            <div id="vision-button" class="col-md-12">
+                <div class="button-detail" id="but-1">
+                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#online">4.5</button>
                 </div>
-        	</div>
-            <div id="vision-button" class="col-md-3 col-md-offset-3 wow animated fadeInRight delay-1">
-                <img class="img-responsive" data-toggle="modal" data-target="#refillable" src="{{STATIC_URL}}application/images/button.png"/>
+                <div class="button-detail" id="but-2">
+                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#travel">1:48</button>
+                </div>
+                <div class="button-detail" id="but-3">
+                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#distance">4.3</button>
+                </div>
+                <div class="button-detail" id="but-4">
+                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#return">32%</button>
+                </div>
             </div>
         </div>
 
@@ -241,6 +254,58 @@
                 <img class="img-responsive" src="{{STATIC_URL}}application/images/whip.png"/>
                 <h2 class="text-center">The Whippersnapper</h2>
                 <h4>Your tumblr-inspired fashion fetish is only the beginning. It’s likely that you wore pleated pants to prom. Stick with us, it can be dangerous out there.</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Online Modal -->
+<div class="modal modal-mobile fade" id="online" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
+                <h2 class="text-center">4.5 DAYS</h2>
+                <h4>Average delivery time of online order</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Travel Modal -->
+<div class="modal modal-mobile fade" id="travel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
+                <h2 class="text-center">1 HOUR 48 MINUTES</h2>
+                <h4>Average time spent shopping with travel</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Distance Modal -->
+<div class="modal modal-mobile fade" id="distance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
+                <h2 class="text-center">4.3 MILES</h2>
+                <h4>Average distance traveled for shopping trips</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Return Modal -->
+<div class="modal modal-mobile fade" id="return" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
+                <h2 class="text-center">32%</h2>
+                <h4>Online menswear return rate</h4>
             </div>
         </div>
     </div>
