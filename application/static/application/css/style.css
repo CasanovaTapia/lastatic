@@ -178,27 +178,28 @@ h4 {
 	padding-bottom: 25%;
 	width: 25%;
 	background-image: url("../images/circle.svg");
+	opacity: .8;
 	background-size: 90%;
 	background-repeat: no-repeat;
 }
 #but-1 {
 	position: absolute;
-	top: 25%;
+	top: 15%;
 	left: 36%;
 }
 #but-2 {
 	position: absolute;
-	top: 60%;
+	top: 55%;
 	left: 36%;
 }
 #but-3 {
 	position: absolute;
-	top: 42%;
+	top: 35%;
 	left: 16%;
 }
 #but-4 {
 	position: absolute;
-	top: 42%;
+	top: 35%;
 	left: 56%;
 }
 .button-detail .btn {
@@ -207,8 +208,11 @@ h4 {
 	height: 100%;
 	padding-bottom: 50%;
 	width: 100%;
-	background: #fff;
-	color: #222;
+	background: #34495e;
+	color: #fff;
+	border: #34495e;
+	display: table-cell;
+  	vertical-align: middle;
 }
 #online {
 	width: 110%;
@@ -228,13 +232,12 @@ h4 {
 	border-top-color: #fff;
  	border-width: 5px 5px 0;
 }
-.tooltip-inner {
+#vision .tooltip-inner {
 	color: #000;
 	background: #fff;
 	border: solid 1px #fff;
 	width: 300%;
 	font-size: 1.25em;
-	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	padding: 10%;
@@ -347,7 +350,17 @@ h4 {
 	line-height: 130%;
 	max-width: 80%;
 	margin: 20px auto 20px auto;
-	text-align: justify;
+}
+#service .tooltip-inner {
+	color: #000;
+	background: #fff;
+	border: solid 1px #fff;
+	width: 400%;
+	font-size: 1.25em;
+	text-transform: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	padding: 10%;
 }
 @media screen and (max-width:440px) {
 	#service {
