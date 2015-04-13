@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="main preload container-fluid">
-        <div id="header" class="row">
-            <div class="col-md-12 text-center">
-                <img id="logo-header" class="header img-responsive animated fadeIn delay " src="{{STATIC_URL}}application/images/lapel_white.png"/>
-                <h2 id="tagline" class="animated fadeIn delay-1">Welcome to better</h2>
-            </div>
-            <div class="col-md-12 animated zoomIn delay-1 text-center">
-                <a href="#launch"><button type="button" class="btn btn-top animated zoomIn delay hvr-float">Join</button></a>
+
+    <div id="fullpage" class="main">
+        <div id="header" class="row section">
+            <div id="delay-fade" class="col-md-12 animated fadeIn delay text-center">
+                <img id="logo-header" class="header img-responsive" src="{{STATIC_URL}}application/images/lapel_white.png"/>
+                <h2 id="tagline">Welcome to better</h2>
+                <a href="#launch"><button type="button" class="btn btn-top animated zoomIn delay">Apply</button></a>
                 <!-- <a href="#"><button type="button" class="btn btn-top">Log In</button></a> -->
             </div>
         </div>
@@ -23,18 +22,18 @@
                     </div>
             	</div>
             </div>
-            <div id="vision-button" class="col-md-12">
-                <div class="button-detail" id="but-1">
-                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#online">4.5</button>
+            <div id="vision-button" class="col-md-12 text-center">
+                <div class="button-detail wow animated bounce delay" id="but-1">
+                    <button type="button" id="online" class="btn" data-toggle="tooltip" data-placement="bottom" title="Average days for delivery of an online order">4.5</button>
                 </div>
-                <div class="button-detail" id="but-2">
-                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#travel">1:48</button>
+                <div class="button-detail wow animated bounce delay-2" id="but-2">
+                    <button type="button wow animated bounce delay" id="time" class="btn" data-toggle="tooltip" data-placement="bottom" title="Average minutes spent shopping">108</button>
                 </div>
-                <div class="button-detail" id="but-3">
-                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#distance">4.3</button>
+                <div class="button-detail wow animated bounce delay-1" id="but-3">
+                    <button type="button" id="miles" class="btn" data-toggle="tooltip" data-placement="bottom" title="Average miles traveled for shopping trips">4.3</button>
                 </div>
-                <div class="button-detail" id="but-4">
-                    <button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#return">32%</button>
+                <div class="button-detail wow animated bounce" id="but-4">
+                    <button type="button" id="return" class="btn" data-toggle="tooltip" data-placement="bottom" title="Online menswear return rate">32%</button>
                 </div>
             </div>
         </div>
@@ -112,17 +111,17 @@
         	<div class="launch-item launchpad-1 col-md-4">
         		<h2>Los Angeles</h2>
                 <h3>April 2015</h3>
-        		<button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#join">Join</button>
+        		<button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#apply">Apply</button>
         	</div>
         	<div class="launch-item launchpad-2 col-md-4">
         		<h2>San Francisco</h2>
                 <h3>June 2015</h3>
-        		<button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#join">Join</button>
+        		<button type="button" class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#apply">Apply</button>
         	</div>
         	<div class="launch-item launchpad-3 col-md-4">
         		<h2>New York City</h2>
                 <h3>Sept 2015</h3>
-        		<button type="button"class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#join">Join</button>
+        		<button type="button"class="btn wow animated zoomIn delay" data-toggle="modal" data-target="#apply">Apply</button>
         	</div>
         </div>
 
@@ -152,28 +151,33 @@
     </div>
 
     <!-- MODALS -->
-    <!-- Join Modal -->
-<div class="modal fade" id="join" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Apply Modal -->
+<div class="modal fade" id="apply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Join Us.</h4>
+                <h4 class="modal-title" id="myModalLabel">Membership is by invitation only</h4>
             </div>
             <div class="modal-body">
                 <form action="send/" method="post">
                     {% csrf_token %}
                     <div class="input-group">
                         <input type="text" name="name" class="form-control" placeholder="Full Name" aria-describedby="basic-addon2">
-                        <input type="text" name="year"class="form-control" placeholder="Year Born" aria-describedby="basic-addon2">
-                        <input type="text" name="residence"class="form-control" placeholder="City of Primary Residence" aria-describedby="basic-addon2">
-                        <input type="text" name="method"class="form-control" placeholder="Perferred Method of Contact" aria-describedby="basic-addon2">
-                        <input type="text" name="type"class="form-control" placeholder="Email or Phone" aria-describedby="basic-addon2">
-                        <input type="text" name="icon"class="form-control" placeholder="Last question, one that we always ask, Who is your style icon?" aria-describedby="basic-addon2">
+                        <input type="text" name="type" class="form-control" placeholder="Email" aria-describedby="basic-addon2">
+                    </div>
+                    <div class="form-group">
+                        <input id="checkbox" type="checkbox">
+                        <span id="checkbox-label">I have an invitation code</span>
+                    </div>
+                    <div id="delivery" style="display:none;">
+                        <div class="input-group">
+                            <input type="text" name="code" class="form-control" placeholder="Invitation code" aria-describedby="basic-addon2">
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>
@@ -254,58 +258,6 @@
                 <img class="img-responsive" src="{{STATIC_URL}}application/images/whip.png"/>
                 <h2 class="text-center">The Whippersnapper</h2>
                 <h4>Your tumblr-inspired fashion fetish is only the beginning. It’s likely that you wore pleated pants to prom. Stick with us, it can be dangerous out there.</h4>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Online Modal -->
-<div class="modal modal-mobile fade" id="online" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
-                <h2 class="text-center">4.5 DAYS</h2>
-                <h4>Average delivery time of online order</h4>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Travel Modal -->
-<div class="modal modal-mobile fade" id="travel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
-                <h2 class="text-center">1 HOUR 48 MINUTES</h2>
-                <h4>Average time spent shopping with travel</h4>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Distance Modal -->
-<div class="modal modal-mobile fade" id="distance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
-                <h2 class="text-center">4.3 MILES</h2>
-                <h4>Average distance traveled for shopping trips</h4>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Return Modal -->
-<div class="modal modal-mobile fade" id="return" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <button type="button" class="btn btn-modal text-center" data-dismiss="modal">X</button>
-                <h2 class="text-center">32%</h2>
-                <h4>Online menswear return rate</h4>
             </div>
         </div>
     </div>

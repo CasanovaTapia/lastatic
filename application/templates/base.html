@@ -51,7 +51,37 @@ mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
 		<script type="text/javascript">
 			$("window").load(function() {
 			$("body").removeClass("preload");
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['Main', 'Our Vision', 'Our Services', 'Lookbooks', 'Our Gentlemen', 'Join']
+				});
 			});
+		</script>
+
+		<!-- For Apply Modal -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var checkbox = document.getElementById('checkbox');
+				var delivery_div = document.getElementById('delivery');
+				var showHiddenDiv = function(){
+				   if(checkbox.checked) {
+				     delivery_div.style['display'] = 'block';
+				   } else {
+				     delivery_div.style['display'] = 'none';
+				   }
+				}
+		checkbox.onclick = showHiddenDiv;
+		showHiddenDiv();
+		});
+		</script>
+
+		<!-- Bootstrap Tooltip -->
+		<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
 		</script>
 
 		<script>
