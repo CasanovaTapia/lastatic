@@ -91,14 +91,14 @@ h4 {
 .heading{
     margin-top: 50px;
 }
-@media screen and (min-width:441px){
+@media screen and (min-width:769px){
 	.hide-lg {
 		display: none;
 	}
 }
 
 /* MOBILE BASE */
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	.hide-sm {
 		display: none;
 	}
@@ -140,7 +140,7 @@ h4 {
 	margin: 20px 7px 10px 7px;
     width: 100px;
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	#logo-header{
 	    margin: 10% auto 0 auto;
 	    max-width: 80%;
@@ -227,24 +227,7 @@ h4 {
 }
 #return {
 }
-.tooltip.top .tooltip-arrow {
-	bottom: 0;
-	left: 50%;
-	margin-left: -5px;
-	border-top-color: #fff;
- 	border-width: 5px 5px 0;
-}
-#vision .tooltip-inner {
-	color: #000;
-	background: #fff;
-	border: solid 1px #fff;
-	width: 300%;
-	font-size: 1.25em;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	padding: 10%;
-}
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	#vision {
 		background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/vision-mobile.jpg");
 		background-size:cover;
@@ -296,13 +279,13 @@ h4 {
     background-image: url("../images/inst.png");
 	background-size: cover;
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	#lookbook h3 {
 	    font-size:1.1em;
 	    margin-top:0;
 	}
 	#lookbook .btn{
-		margin-top: 20%;
+		margin-top: 10%;
 		font-size: 1.1em;
 		margin-bottom: 25%;
 	}
@@ -375,7 +358,7 @@ h4 {
     width: 300px;
     height:100px;
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	#service {
 		height: 100%;
 		background-size: cover;
@@ -445,7 +428,7 @@ h4 {
 .btn-test {
 	margin-top: 60px;
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	.gent-item {
 		margin: 0;
 	}
@@ -486,7 +469,7 @@ h4 {
 }
 #launch .btn{
 	margin-top:20px;
-	margin-bottom: 120%;
+	margin-bottom: 95%;
     width:150px;
     height:40px;
     background:0.2;
@@ -546,7 +529,7 @@ h4 {
 	width:30%;
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	.launch-item {
 		height: 30%;
 	}
@@ -631,7 +614,7 @@ h4 {
 .ops{
     height:100%
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:768px) {
 	#footer {
 
 	}
@@ -678,6 +661,30 @@ h4 {
 	border: none;
 	background:#fff;
 	color: #555;
+}
+
+/* TOOLTIP */
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-top-color: #fff;
+ 	border-width: 5px 5px 0;
+}
+.tooltip-inner {
+	color: #000;
+	background: #fff;
+	border: solid 1px #fff;
+	max-width: 400px;
+	font-size: 1.25em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	padding: 10%;
+}
+@media screen and (max-width:768px) {
+	.tooltip-inner {
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 540px) {
