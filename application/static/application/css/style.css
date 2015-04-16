@@ -3,23 +3,15 @@
 /* Reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-html {
-	height: 100%!important;
-}
-body {
-	min-height: 100%;
-	position:absolute;
-	top:0;
-	bottom:0;
-	right:0;
-	left:0;
-}
 
 /* Clearfix */
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+html {
+	height:100%;
 }
 /* Buttons */
 .btn {
@@ -71,7 +63,12 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	font-size: 1em;
+	height: 100%;
 }
+.main {
+	height: 100%;
+}
+
 h1, h2 {
 	text-transform: uppercase;
 	letter-spacing: 6px;
@@ -120,6 +117,7 @@ h4 {
 #header {
     background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/desk.jpg");
     background-size:cover;
+    height:100%;
     text-align:center;
     border-bottom:2px solid white;
     color: #fff;
@@ -155,6 +153,7 @@ h4 {
     background-image:linear-gradient(to bottom, rgba(32,23,19,.3) 0%, rgba(32,23,19,.3) 100%), url("../images/vision.jpg");
 	background-size: cover;
 	background-position: bottom;
+	height:100%;
     -webkit-font-smoothing: antialiased;
     text-align:center;
     color:white;
@@ -269,6 +268,12 @@ h4 {
 /* LOOKBOOK */
 #lookbook {
     -webkit-font-smoothing: antialiased;
+    height:100%;
+}
+.lookbook-item {
+    border-right:1px solid white;
+    background-size: cover;
+    height: 100%;
 }
 #lookbook h3 {
     font-size:30px;
@@ -282,19 +287,15 @@ h4 {
     font-size:20px;
     margin-top:50px;
 	background:rgba(0, 0, 0, 0.22);
-	margin-bottom: 90%;
 }
 #lookbook-1{
     background-image: url("../images/upscale.jpg");
-	background-size: cover;
 }
 #lookbook-2{
     background-image: url("../images/ucas.png");
-	background-size: cover;
 }
 #lookbook-3{
     background-image: url("../images/inst.png");
-	background-size: cover;
 }
 @media screen and (max-width:440px) {
 	#lookbook h3 {
@@ -304,7 +305,6 @@ h4 {
 	#lookbook .btn{
 		margin-top: 20%;
 		font-size: 1.1em;
-		margin-bottom: 25%;
 	}
 	#lookbook-1 {
 		background-size:cover;
@@ -327,6 +327,7 @@ h4 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 	color: #fff;
 }
 #service .heading {
@@ -402,13 +403,11 @@ h4 {
     background-image: url("../images/linen.jpg");
 	background-size: cover;
     color: #fff;
+    height:100%;
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -webkit-font-smoothing: antialiased;
 	font-weight: 200;
-}
-#gentlemen h2 {
-	margin-top: 10%;
 }
 #gentlemen img{
 	border-radius: 200px;
@@ -478,6 +477,7 @@ h4 {
 #launch{
     border-bottom:1px solid white;
 	color: #fff;
+	height: 90%;
 }
 #launch h2{
 	font-size: 1.75em;
@@ -486,7 +486,6 @@ h4 {
 }
 #launch .btn{
 	margin-top:20px;
-	margin-bottom: 120%;
     width:150px;
     height:40px;
     background:0.2;
@@ -556,9 +555,6 @@ h4 {
 	    margin-top:0;
 		padding-top: 20px;
 	}
-	#launch .btn {
-		margin-bottom: 20%;
-	}
 	#apply .modal-dialog  {
 		width:90%;
 	}
@@ -571,6 +567,7 @@ h4 {
     color: black;
     margin-top: 0;
 	padding-bottom: 0;
+	height: 5%;
 }
 #footer-logo img {
 	height: auto;
@@ -632,23 +629,17 @@ h4 {
     height:100%
 }
 @media screen and (max-width:440px) {
-	#footer {
-
+	#footer-logo {
+		margin: -50px 230px auto auto;
 	}
 	#footer-logo img {
 		width: 80px;
 		height: auto;
 	}
-	.social {
-		padding-top: 6%;
-		position: fixed!important;
-		right: 0;
-		font-size: .75em;
-		width: 200px;
-	}
-	#footer-logo {
-		position: fixed!important;
-		left: 0;
+	.social{
+	    padding-top:0px;
+		font-size: .5em;
+		margin: 0 auto 0 200px;
 	}
 }
 
