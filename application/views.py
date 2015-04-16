@@ -25,13 +25,15 @@ def send(request):
 	method = request.POST.get("method", "")
 	send_type = request.POST.get("type", "")
 	icon = request.POST.get("icon", "")
+	code = request.POST.get("code", "")
 
 	c = context = Context({ 'name':name,
 							'year':year,
 							'residence':residence,
 							'method':method,
 							'type':send_type,
-							'icon':icon })
+							'icon':icon,
+							'code':code })
 
 #Internal Mailing Handler 
 
