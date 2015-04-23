@@ -19,9 +19,6 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{STATIC_URL}}application/css/swipebox.min.css">
 	<link rel="stylesheet" href="{{STATIC_URL}}application/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}application/css/hover-min.css" media="all">
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}application/css/blockScroll.css">
-
 
 	{% block header %}
 		<title>Lapel</title>
@@ -46,18 +43,8 @@ mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="{{STATIC_URL}}application/js/jquery.swipebox.min.js"></script>
-		<!-- // <script type="text/javascript" src="{{STATIC_URL}}application/js/jquery.fullPage.min.js"></script> -->
-		<script type="text/javascript" src="{{STATIC_URL}}application/js/wow.min.js"></script>
-		<script src="{{STATIC_URL}}application/js/blockScroll.js"></script>
+		<script type="text/javascript" src="{{STATIC_URL}}application/js/wow.min.js"</script>
 
-		<!-- Block Scroll -->
-		<script type="text/javascript">
-			$(function() {
-				var blockScroller = $("#main-wrap").blockScroll({
-					fadeBlocks: true
-				});
-			});
-		</script>
 
 		<!-- For Apply Modal -->
 		<script type="text/javascript">
@@ -71,9 +58,9 @@ mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
 				     delivery_div.style['display'] = 'none';
 				   }
 				}
-		checkbox.onclick = showHiddenDiv;
-		showHiddenDiv();
-		});
+				checkbox.onclick = showHiddenDiv;
+				showHiddenDiv();
+			});
 		</script>
 
 		<!-- Bootstrap Tooltip -->
@@ -83,7 +70,6 @@ mixpanel.init("9a7b84764e50f92e1978f2f89bf1e96e");
 		})
 		</script>
 
-		<!-- Wow -->
 		<script>
 			new WOW().init();
 		</script>

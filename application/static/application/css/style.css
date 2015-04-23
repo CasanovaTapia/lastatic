@@ -3,23 +3,15 @@
 /* Reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-html {
-	height: 100%!important;
-}
-body {
-	min-height: 100%;
-	position:absolute;
-	top:0;
-	bottom:0;
-	right:0;
-	left:0;
-}
 
 /* Clearfix */
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+html {
+	height:100%;
 }
 /* Buttons */
 .btn {
@@ -71,7 +63,12 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	font-size: 1em;
+	height: 100%;
 }
+.main {
+	height: 100%;
+}
+
 h1, h2 {
 	text-transform: uppercase;
 	letter-spacing: 6px;
@@ -123,6 +120,7 @@ h4 {
     text-align:center;
     border-bottom:2px solid white;
     color: #fff;
+	height: 100vh;
 }
 #logo-header{
 	margin: 0 auto;
@@ -158,6 +156,7 @@ h4 {
     -webkit-font-smoothing: antialiased;
     text-align:center;
     color:white;
+	height: 100vh;
 }
 #vision-heading {
     margin-top:30%;
@@ -252,6 +251,12 @@ h4 {
 /* LOOKBOOK */
 #lookbook {
     -webkit-font-smoothing: antialiased;
+	height: 100vh;
+}
+.lookbook-item {
+    border-right:1px solid white;
+    background-size: cover;
+    height: 100%;
 }
 #lookbook h3 {
     font-size:30px;
@@ -265,19 +270,15 @@ h4 {
     font-size:20px;
     margin-top:50px;
 	background:rgba(0, 0, 0, 0.22);
-	margin-bottom: 90%;
 }
 #lookbook-1{
     background-image: url("../images/upscale.jpg");
-	background-size: cover;
 }
 #lookbook-2{
     background-image: url("../images/ucas.png");
-	background-size: cover;
 }
 #lookbook-3{
     background-image: url("../images/inst.png");
-	background-size: cover;
 }
 @media screen and (max-width:768px) {
 	#lookbook h3 {
@@ -287,7 +288,6 @@ h4 {
 	#lookbook .btn{
 		margin-top: 10%;
 		font-size: 1.1em;
-		margin-bottom: 25%;
 	}
 	#lookbook-1 {
 		background-size:cover;
@@ -311,6 +311,7 @@ h4 {
     -o-background-size: cover;
     background-size: cover;
 	color: #fff;
+	height: 100vh;
 }
 #service .heading {
 	margin-top: 100px;
@@ -360,7 +361,6 @@ h4 {
 }
 @media screen and (max-width:768px) {
 	#service {
-		height: 100%;
 		background-size: cover;
 	}
 	#service .heading {
@@ -371,11 +371,15 @@ h4 {
 		font-size: 1.25em;
 	}
 	#service h3 {
-		font-size: 1em;
+		font-size: .70em;
+	}
+	#service p {
+		margin-top: 0;
+		font-size: .7em;
 	}
 	.service-item img {
-		width:25%;
-		height:25%;
+		width:20%;
+		height:20%;
 		margin: 2% auto 1% auto;
 	}
 }
@@ -389,9 +393,7 @@ h4 {
     -webkit-animation-delay: 2s;
     -webkit-font-smoothing: antialiased;
 	font-weight: 200;
-}
-#gentlemen h2 {
-	margin-top: 10%;
+	height: 100vh;
 }
 #gentlemen img{
 	border-radius: 200px;
@@ -456,11 +458,16 @@ h4 {
 		bottom: 3%;
 	}
 }
+/* FINAL DIV */
+#final {
+	height: 100vh;
+}
 
 /* LAUNCH */
 #launch{
     border-bottom:1px solid white;
 	color: #fff;
+	height: 100%;
 }
 #launch h2{
 	font-size: 1.75em;
@@ -539,9 +546,6 @@ h4 {
 	    margin-top:0;
 		padding-top: 20px;
 	}
-	#launch .btn {
-		margin-bottom: 20%;
-	}
 	#apply .modal-dialog  {
 		width:90%;
 	}
@@ -554,6 +558,7 @@ h4 {
     color: black;
     margin-top: 0;
 	padding-bottom: 0;
+	height: 5%;
 }
 #footer-logo img {
 	height: auto;
@@ -616,22 +621,24 @@ h4 {
 }
 @media screen and (max-width:768px) {
 	#footer {
-
-	}
-	#footer-logo img {
-		width: 80px;
-		height: auto;
-	}
-	.social {
-		padding-top: 6%;
-		position: fixed!important;
-		right: 0;
-		font-size: .75em;
-		width: 200px;
+		margin: -50px 230px auto auto;
 	}
 	#footer-logo {
-		position: fixed!important;
-		left: 0;
+		position: fixed;
+		top: -50%;
+	}
+	#footer-logo img{
+		height: auto;
+		width: 80px;
+	}
+	.social{
+	    padding-top:0px;
+		font-size: .5em;
+		margin: 0;
+		width: 200%;
+		position: fixed;
+		top: 50%;
+		left: 200%;
 	}
 }
 
